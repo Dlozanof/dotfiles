@@ -95,4 +95,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gitc='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-
+alias rm='echo "This is not the command you are looking for."; false'

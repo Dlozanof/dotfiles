@@ -11,9 +11,15 @@ Plug 'junegunn/fzf.vim'
 Plug 'jnurmine/Zenburn'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'majutsushi/tagbar'
-Plug 'zxqfl/tabnine-vim'
+"Plug 'zxqfl/tabnine-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'matze/vim-tex-fold'
+" Vim Zen Mode
+Plug 'junegunn/goyo.vim'
+
+" A Vim Plugin for Lively Previewing LaTeX PDF Output
+"Plug 'xuhdev/vim-latex-live-preview'
+Plug 'lervag/vimtex'
 call plug#end()
 
 "" Tuning para hacerme el xulo
@@ -32,8 +38,8 @@ set tabstop=4
 set shiftwidth=4
 
 " Relative line numbers
-set number relativenumber
-set nu rnu
+set number "relativenumber
+"set nu rnu
 
 "Placeholders, ctrl j salta al siguiente y lo borra, https://vim.fandom.com/wiki/Simple_placeholders
 inoremap <c-j> <Esc>/<++><CR><Esc>cf>
@@ -74,3 +80,6 @@ inoremap ,fig \begin{figure}[h]<ENTER>\centering<ENTER>\includegraphics[width=<+
 " Formato
 autocmd FileType tex inoremap  ,bf \textbf{}<Esc>T{i
 autocmd FileType tex inoremap  ,it \textit{}<Esc>T{i
+
+" Configuracion para el autopreview de latex
+let g:livepreview_previewer = 'zathura'
