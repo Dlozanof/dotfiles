@@ -16,9 +16,23 @@ set spoolfile = "+INBOX"
 # Location of drafts
 set postponed = "+[GMail]/Drafts"
 
+# Mailboxes
+mailboxes +GIT +Compras +BioBee +Familia +Importante
+
 # Activate caching, as it can greatly improve speed
 set header_cache = "~/.mutt/cache/headers"
 set message_cachedir = "~/.mutt/cache/bodies"
 
 # Disable saving outgoing mail since Gmail saves them by default.
 set record = ""
+
+# Sidebar
+set sidebar_visible
+set sidebar_format="%B%?F? [%F]?%* %?N?%N/?%S"
+set mail_check_stats
+
+# Ver HTML
+auto_view text/html
+alternative_order text/enriched text/plain text/html text
+
+
