@@ -1,5 +1,6 @@
 "" Plugins
 call plug#begin('/home/diego/.vim/plugged')
+Plug 'vim-scripts/taglist.vim'
 Plug 'calviken/vim-gdscript3'
 Plug 'chriskempson/base16-vim'
 Plug 'ervandew/supertab'
